@@ -4,10 +4,15 @@ import pandas as pd
 import pickle
 from fastai.vision.all import *
 from pathlib import Path
+import platform
+
+plt = platform.system()
+if plt != 'Windows':
+  pathlib.WindowsPath = pathlib.PosixPath
 
 # 加载猫品种分类模型
 model_path_cat = Path("maomi.pkl")
-learn_cat = load_learner(str(model_path_cat))
+learn_cat = load_learner(model_path_cat)
 
 # Streamlit 界面
 st.title("流浪猫猫识别系统！！！")
