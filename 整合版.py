@@ -5,6 +5,7 @@ import pickle
 from fastai.vision.all import *
 from pathlib import Path
 import platform
+import pathlib
 
 plt = platform.system()
 if plt != 'Windows':
