@@ -7,7 +7,7 @@ from pathlib import Path
 
 # 加载猫品种分类模型
 model_path_cat = Path("maomi.pkl")
-learn_cat = load_learner(model_path_cat)
+learn_cat = load_learner(str(model_path_cat))
 
 # Streamlit 界面
 st.title("流浪猫猫识别系统！！！")
