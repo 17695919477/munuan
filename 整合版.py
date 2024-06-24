@@ -5,7 +5,7 @@ import pickle
 from fastai.vision.all import *
 
 # 加载猫品种分类模型
-model_path_cat = Path("17695919477/munuan/main/maomi.pkl")
+model_path_cat = Path("maomi.pkl")
 learn_cat = load_learner(model_path_cat)
 
 # Streamlit 界面
@@ -31,7 +31,7 @@ if uploaded_file_cat is not None:
 # 猫品种推荐器部分
 st.title('如果你想领养一只猫猫的话，请输入你的想法！！！')
 
-with open("17695919477/munuan/main/cat_breed_recommender.pkl", 'rb') as f:  
+with open("cat_breed_recommender.pkl", 'rb') as f:  
     clf = pickle.load(f)  
   
 def predict_breed(clf, features):  
