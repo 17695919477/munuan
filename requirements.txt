@@ -1,0 +1,6 @@
+pandas==1.5.3
+pickleshare==0.7.5
+Pillow==9.4.0
+fastai==2.7.14
+streamlit==1.35.0
+opencv_python_headless==4.9.0.80
