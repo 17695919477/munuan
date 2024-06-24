@@ -3,6 +3,7 @@ from PIL import Image
 import pandas as pd
 import pickle
 from fastai.vision.all import *
+from pathlib import Path
 
 # 加载猫品种分类模型
 model_path_cat = Path("maomi.pkl")
